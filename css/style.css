@@ -1,0 +1,104 @@
+/* default css for nav menu */
+/* we dont want list style and text decoration */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+nav a {
+    #border: solid blue;
+    display: block;/* a tag is not display block by default. make block to apply width.*/
+    text-decoration: none;
+    padding-left: 10px;
+    color: #ffffff;
+}
+/* ------------ end default nav menu css ------- */
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+}
+nav > ul > p {
+    #border: solid blue 1px;
+    width: 55%;
+}
+nav > ul {/* want the first ul to be flex (has default of flex-direction:row)*/
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px 0;
+    margin: 0 20%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 18pt;
+    color: #ffffff;
+    #border: solid red 1px;
+}
+nav > ul > li {
+    #border: solid 1px blue;
+    margin: 0 5px;
+    width: 15%;
+}
+nav > ul > li > a {
+    #border: solid 1px red;
+}
+nav > ul > li > span {
+    border-left: solid #ffffff 2px;
+    height: 25px;
+    position: absolute;
+    top: 18px;
+}
+
+/* css to change background color while hovering on first level li elements*/
+nav > ul > li:hover {
+    background-color: #212121;
+}
+
+/* css to hide 2nd ul */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 10%;
+}
+
+/* css to show 2nd ul while hovering */
+nav > ul > li:hover ul {
+    display: block;
+}
+
+/* main */
+main {
+    margin: 1% 20% 0;
+    display: flex;
+    padding-bottom: 10%; /* footer height */
+}
+main > .content {
+   #border: solid 1px blue; 
+   width: 75%;
+}
+main > .left-menu {
+   #border: solid 1px red; 
+   width: 25%;
+} 
+main > .left-menu > ul > li {
+    padding: 10px 0;
+    padding-right: 100px;
+    #border: solid 1px green;
+}
+/* footer */
+footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 0;
+}

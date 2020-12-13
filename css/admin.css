@@ -1,0 +1,41 @@
+header > nav > ul {
+    display: block; /* we had this as flex in the normal nav menu*/
+}
+
+main {/* need to make margin-bottom: 0 because this was only when we use the footer. */
+    margin-bottom: 0;
+}
+
+/* main admin-wrapper */ 
+main.admin-wrapper {
+    display: flex;
+}
+.admin-sidebar {
+    flex: 2;
+    height: 100vh;
+}
+.admin-sidebar > ul > li {
+    padding: 30px 0;
+}
+.admin-content {
+    flex: 8;
+    height: 100vh;
+    margin-top:10px;
+}
+
+.admin-content > .button-group {
+   padding-left: 10%;
+   margin-bottom: 5%;
+}
+.admin-content > .button-group > a {
+    border: solid 1px grey;
+    background: blue;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+td {
+    padding: 5px 10px;
+}
